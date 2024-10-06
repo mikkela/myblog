@@ -1,0 +1,21 @@
+baseURL = 'https://blog.mikkelarentoft.net/'
+languageCode = 'en-us'
+title = 'Mikkel Arentoft'
+[module]
+  [[module.imports]]
+    path = "github.com/hugo-sid/hugo-blog-awesome"
+
+[[params.socialIcons]]
+name = "github"
+url = "https://github.com/mikkela"
+
+[[params.socialIcons]]
+name = "linkedin"
+url = "https://linkedin.com/in/mikkelarentoft"
+
+[[params.socialIcons]]
+name = "email"
+url = "mail@mikkelarentoft.net"
+
+[params]
+  goToTop = true
