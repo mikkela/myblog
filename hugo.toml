@@ -19,3 +19,7 @@ url = "mail@mikkelarentoft.net"
 
 [params]
   goToTop = true
+
+[taxonomies]
+  genre = 'genres'
+  tag = 'tags'
