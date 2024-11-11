@@ -5,6 +5,22 @@
     <link>http://localhost:1313/</link>
     <description>Recent content on Mikkel Arentoft</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    <lastBuildDate>Mon, 11 Nov 2024 09:27:00 +0100</lastBuildDate><atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Kamin Interpreters - Introduction</title>
+      <link>http://localhost:1313/posts/kamin-1/</link>
+      <pubDate>Mon, 11 Nov 2024 09:27:00 +0100</pubDate>
+      
+      <guid>http://localhost:1313/posts/kamin-1/</guid>
+      
+      <description>&lt;p&gt;Ever since I got my hands on my first computer (a Commodore 64 in the mid-80s), I’ve always loved programming. At
+first, it was because I had no idea what else one would use such a machine for, and later because it became a tool
+for creative expression. Turning ideas and thoughts into a program feels, for me, like a process similar to the
+release others might find in painting, music, or ceramics—though, admittedly, without quite the same fascination
+from others!&lt;/p&gt;</description>
+      
+    </item>
+    
   </channel>
 </rss>
