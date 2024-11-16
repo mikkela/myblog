@@ -5,7 +5,6 @@ draft = false
 genres = ['interpreters', 'programming languages']
 tags = ['scala']
 +++
-
 Ever since I got my hands on my first computer (a Commodore 64 in the mid-80s), I’ve always loved programming. At 
 first, it was because I had no idea what else one would use such a machine for, and later because it became a tool 
 for creative expression. Turning ideas and thoughts into a program feels, for me, like a process similar to the 
@@ -27,7 +26,7 @@ from scratch, using nothing but a command-line tool, with the added twist that t
 interpret all eight languages. The goal is not only to create each interpreter but also to do it in a way that keeps 
 the implementation general and adaptable to the unique aspects of each language.
 
-# The Languages
+## The Languages
 The languages in Kamin's book are squeezed into the same basic, parentheses-based notation 
 (inspired by [LISP](https://en.wikipedia.org/wiki/Lisp_(programming_language))). Every element, 
 except the very simplest, is wrapped in a set of parentheses as illustrated below.
@@ -50,7 +49,7 @@ The langauges are:
 
 A palette of programming languages from the late 80s—this should be interesting! Down the rabbit hole we go!
 
-# Basic
+## Basic
 We start with Basic, which defines the foundational language that the rest builds upon. 
 It consists of a series of constructs, some simple
 ```
