@@ -138,10 +138,65 @@ An example is:
 -> (+1 4)
 5
 ```
+## Examples
+### Sigma
+
+The sigma function calculates the sum from `m` to `n`:
+```
+sigma(m, n) = m + (m + 1) + (m + 2) + .... + n
+```
+This can be implemented in Basic as follows:
+```
+(define sigma (m n) 
+   (if (> m n) 0 (+ m (sigma (+ m 1) n))))
+```
+A few runs:
+```
+-> (sigma 1 5)
+15
+-> (sigma 7 6)
+0
+```
+### Fibonacci
+The Fibonacci sequence is defined as follows:
+```
+(fib 0) = 0
+(fib 1) = 1
+(fib m) = (fib m-1) + (fib m-2), m > 1
+```
+This can be implemented in Basic as follows:
+```
+(define fib (m) 
+   (if (< m 1) 0 
+      (if (= m 1) 1 
+         (+ (fib (- m 1)) (fib (- m 2))))))
+```
+A few runs:
+```
+-> (fib 0)
+0
+-> (fib 1)
+1
+-> (fib 2)
+1
+-> (fib 3)
+2
+-> (fib 4)
+3
+-> (fib 5)
+5
+-> (fib 6)
+8
+```
 ## Conclusion
 This post concludes the development of the Basic interpreter. We now have an implementation that can serve as a 
-foundation for further extensions. My hope is that for the upcoming languages, the focus will primarily be on the 
-language itself and less on the mechanics of the interpreter, except where relevant extensions are required. 
-Whether this holds true when reality strikes is another question. But I believe it will be an exciting journey.
+foundation for further extensions. Along the way, we had the opportunity to leverage some of Scala's truly elegant 
+features. These features make it possible to introduce **"seams"**—points where extending and building upon the 
+implementation becomes straightforward and seamless.
+
+My hope is that for the upcoming languages, the focus will primarily be on the 
+language itself and less on the mechanics of the interpreter, except where relevant extensions are required, 
+utilizing the "seams". Whether this holds true when reality strikes is another question. But I believe it will be an 
+exciting journey.
 
 As always, please check the [GitHub repository](https://github.com/mikkela/scala.git) for the code.
