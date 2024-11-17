@@ -56,7 +56,10 @@ In the Basic language, the environment is relatively simple, inspired by Pascal.
 - **Local Environment**: Temporarily created when a function is evaluated. It contains the function’s parameters and their corresponding values.
 #### Environment Behavior
 - **Global Variables**: The global environment is the fallback for variable lookups. However, global variables cannot be updated from within a function.
-- **Local Variables**: Variables created or modified via `set` are handled in the local environment if it exists. If no local environment is present, they are managed in the global environment.
+- **Local Variables**: Variables created or modified via `set` are handled in the local environment if it exists and the variables exist in it. If no local environment is present or the variable does not exist in the local environment, they are managed in the global environment.
+
+In other words: the local scope only contains parameters, while variables are in the global scope. 
+This is something to keep in mind.
 #### Function Call and Environment
 When a function is called:
 1. A **new local environment** is created for the called function, shadowing the existing local environment.
