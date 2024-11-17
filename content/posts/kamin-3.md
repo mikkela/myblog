@@ -188,6 +188,29 @@ A few runs:
 -> (fib 6)
 8
 ```
+## Extending the Language
+By default, Basic does not provide a way to take input from the user during evaluation. Kamin himself suggests an 
+exercise to extend Basic with a `read` operation, which takes a number as input and returns it as the result.
+### Steps to Extend Basic with Input Support
+1. **New Token:** A `ReadToken` was introduced to represent the new `read` operation.
+2. **Lexer Update:** The `BasicLexer` was updated to recognize `read` and tokenize it as a `ReadToken`.
+3. **New AST Node:** A `ReadExpressionNode` was added to represent the `read` operation in the abstract syntax tree.
+4. **New Parser:** A `ReadExpressionNodeParser` was implemented to parse the `ReadToken` and construct a `ReadExpressionNode`.
+5. **Parser Extension:** The `BasicExpressionNodeParser` was updated to extend `ReadExpressionNodeParser`, integrating the new parsing logic seamlessly.
+6. **New Evaluator:** An `Evaluator[ReadExpressionNode]` was created to handle the evaluation of `ReadExpressionNode`, which involves reading input from the user.
+### Result
+And that's it! The built-in **seams** appear to work effectively, making it straightforward to add new functionality.
+### Testing the New Functionality
+Let's test the new `read` operation:
+```
+-> (+ 1 (read))
+4
+5
+-> (read)
+mikkel
+Error: mikkel not a valid integer!
+```
+
 ## Conclusion
 This post concludes the development of the Basic interpreter. We now have an implementation that can serve as a 
 foundation for further extensions. Along the way, we had the opportunity to leverage some of Scala's truly elegant 
