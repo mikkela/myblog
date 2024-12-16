@@ -266,6 +266,38 @@ The final step is to organize the code into meaningful modules. Generally, the c
 
 Additionally, there is a configuration file in each of the packages, containing the configurations specific to each language: Basic and APL.
 
+## APL Examples
+
+Before I conclude this blog, let's have a bit of fun with APL.
+
+```
+-> apl
+->(define fac (n) (*/ (indx n)))
+fac
+->(fac 5)
+120
+```
+This used two APL operators:
+* */ - reduction using multiplication - all values in a vector (or matrix) are multiplied. This operator also exists as +/, -/ and // and max/, or/ and and/
+* indx - index generation - returns an vector with the values from 1 up til the argument
+
+```
+->(define avg (v) (/ (+/ v) (shape v)))
+avg
+->(avg '(4 5 6))
+5
+```
+Again are we using an reduction operator (this time +/), but also the shape operator returning the shape of an integer, vector or matrix
+
+```
+->(set m (restruct '(4 4) '(1 1 0 0 0)))
+1 1 0 0
+0 1 1 0
+0 0 1 1
+0 0 0 1
+```
+
+The last example shows how to restruct i vector. Only vectors can be defined using ' and to use them as matrix, the restruct operator is used. I will form the vector into matrix form, eventually repeating or cutting off values if needed.
 ## First Generalization
 We have achieved the goal of building an infrastructure that, at almost every level, can be adapted to individual programming languages. This allows new languages to be built *on top of* the infrastructure rather than being integrated *into* it. The only remaining detail is the handling of `Arithmetic`/`Relational` implementations for the relevant `Value` types, which we will accept for now.
 
