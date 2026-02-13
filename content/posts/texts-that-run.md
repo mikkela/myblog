@@ -330,8 +330,11 @@ Not yet.
 Not yet.
 
 ## Links
-- [Oberon RISC](https://www.oberoncore.org/oberon-risc/)
-- [Oberon Language](https://www.oberoncore.org/oberon/)
+- [Oberon RISC](https://people.inf.ethz.ch/wirth/FPGA-relatedWork/RISC-Arch.pdf)
+- [Oberon RISC Emulator](https://github.com/pdewacht/oberon-risc-emu)
+- [Oberon System](https://people.inf.ethz.ch/wirth/ProjectOberon/UsingOberon.pdf)
+- [Oberon Language](https://people.inf.ethz.ch/wirth/Oberon/Oberon07.Report.pdf)
+- [Project Oberon](https://people.inf.ethz.ch/wirth/ProjectOberon/PO.System.pdf)
 - [Rust Programming Language](https://www.rust-lang.org/)
 - [Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools) (the "Dragon Book")
 - [Crafting Interpreters](https://craftinginterpreters.com/) (a book about building interpreters, which can be a good starting point for understanding compilers as well)
