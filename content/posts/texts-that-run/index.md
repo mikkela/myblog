@@ -58,7 +58,7 @@ This is hard.
 What would it look like if you drew it?
 
 A napkin appeared. A pencil followed. Lines and boxes began to form.
-![Napkin drawing of a compiler and an interpreter](texts-that-run/napkin.png)
+![Napkin drawing of a compiler and an interpreter](napkin.png)
 ---
 
 ## Time, Memory, and Failure
