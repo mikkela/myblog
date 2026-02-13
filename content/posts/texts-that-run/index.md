@@ -58,6 +58,7 @@ This is hard.
 What would it look like if you drew it?
 
 A napkin appeared. A pencil followed. Lines and boxes began to form.
+
 ![Napkin drawing of a compiler and an interpreter](napkin.png)
 ---
 
