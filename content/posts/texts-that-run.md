@@ -58,7 +58,7 @@ This is hard.
 What would it look like if you drew it?
 
 A napkin appeared. A pencil followed. Lines and boxes began to form.
-
+![Napkin drawing of a compiler and an interpreter](texts-that-run-img-1.png)
 ---
 
 ## Time, Memory, and Failure
@@ -328,3 +328,11 @@ we will teach it to understand structure.
 Not yet.
 
 Not yet.
+
+## Links
+- [Oberon RISC](https://www.oberoncore.org/oberon-risc/)
+- [Oberon Language](https://www.oberoncore.org/oberon/)
+- [Rust Programming Language](https://www.rust-lang.org/)
+- [Compilers: Principles, Techniques, and Tools](https://en.wikipedia.org/wiki/Compilers:_Principles,_Techniques,_and_Tools) (the "Dragon Book")
+- [Crafting Interpreters](https://craftinginterpreters.com/) (a book about building interpreters, which can be a good starting point for understanding compilers as well)
+- [Source Code](https://github.com/mikkela/oberon-compiler/tree/texts-that-run)
