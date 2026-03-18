@@ -10,13 +10,13 @@ tags:
 Building a compiler has always been a fascinating challenge for me. Ever since I had a compiler course at my third year in college. 
 Well, we didn't exactly build a compiler, instead we ended building an evaluator of Scheme. 
 While I was glad to complete the course (it was getting very close to Christmas, the hours had been long, Scheme was hard to undserstand,..), it left me somewhat unsatisfied. I haven't built a complete compiler, only some of the initial steps.
---
+
 ## What is a compiler?
 Before jumping into the tasks, let's briefly discuss what a compiler is. 
 A compiler is a program that translates source code written in one programming language (the source language) into another programming language (the target language). 
 The most common use of a compiler is to translate high-level programming languages (like C, Rust, or Oberon) into machine code that can be executed by a computer's CPU.
 This is the core magic that always fascinated me, right from the first time I wrote a program. Back then the code was BASIC and it got interpreted, not compiled (we'll get to the difference). It was still magic, though, and I was taken.
---
+
 ## How does a compiler work?
 How does this translation work then? I have drawn up the traditional compiler pipeline below, the pipeline we also will follow.
 ![Compiler Pipeline](./compiler-pipeline.png)
