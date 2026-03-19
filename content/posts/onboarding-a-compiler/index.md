@@ -44,6 +44,10 @@ The back-end of a compiler is responsible for taking the intermediate representa
 
 Well completing the backend will finish our Oberon compiler. So let's get started, rock and roll!
 
+## Code
+Based on this, I have started a repository on GitHub where I will be building the compiler. You can find it here: [Oberon Compiler](https://github.com/mikkela/oberon-compiler/tree/initial-layout)
+An initial layout with modules following the architecture has been created, but only simple code has been written. I will extend this code base as I go along, but feel free to check it out and follow along.
+
 ## Links
 * [Oberon](https://en.wikipedia.org/wiki/Oberon_(programming_language))
 * [RISC](https://en.wikipedia.org/wiki/RISC)
